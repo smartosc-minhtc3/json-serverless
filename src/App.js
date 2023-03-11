@@ -26,8 +26,8 @@ var data = {
     },
   ],
 };
-var PORT = process.env.NODE_PORT || 3001;
-var HOST = process.env.NODE_HOST || 'localhost';
+var PORT = process.env.PORT || 3001;
+var HOST = process.env.HOST || 'localhost';
 var app = express();
 app.use(cors());
 app.use('/', jsonGraphqlExpress(data));
